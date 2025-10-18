@@ -1,0 +1,9 @@
+﻿  CenterPanel.cpp
+  ManuTool.cpp
+  Generating code
+D:\Github\goonzu-manutool\ManuTool\ManuTool.cpp(539): warning C4715: 'WndProc': not all control paths return a value
+  3 of 1090 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  ManuTool.vcxproj -> D:\Github\goonzu-manutool\ManuTool\x64\Release\ManuTool.exe

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e11fa1ea-0088-4027-b7c5-68817e630f52}</ProjectGuid>
+    <RootNamespace>ManuTool</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <UndefinePreprocessorDefinitions>NOMINMAX;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <UndefinePreprocessorDefinitions>NOMINMAX;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="dwmapi.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Headers\CalcBOM.h" />
+    <ClInclude Include="Headers\CenterPanel.h" />
+    <ClInclude Include="Headers\CraftingPanel.h" />
+    <ClInclude Include="Headers\ItemRegistry.h" />
+    <ClInclude Include="Headers\Items_Armor.h" />
+    <ClInclude Include="Headers\Items_Axe.h" />
+    <ClInclude Include="Headers\Items_Belt.h" />
+    <ClInclude Include="Headers\Items_Bow.h" />
+    <ClInclude Include="Headers\Items_Cane.h" />
+    <ClInclude Include="Headers\Items_Cloak.h" />
+    <ClInclude Include="Headers\Items_Costume.h" />
+    <ClInclude Include="Headers\Items_Crystal.h" />
+    <ClInclude Include="Headers\Items_FishingTool.h" />
+    <ClInclude Include="Headers\Items_Food.h" />
+    <ClInclude Include="Headers\Items_Gun.h" />
+    <ClInclude Include="Headers\Items_Hat.h" />
+    <ClInclude Include="Headers\items_Helmet.h" />
+    <ClInclude Include="Headers\Items_Ironware.h" />
+    <ClInclude Include="Headers\Items_Medicine.h" />
+    <ClInclude Include="Headers\Items_Necklace.h" />
+    <ClInclude Include="Headers\Items_Other.h" />
+    <ClInclude Include="Headers\Items_Pottery.h" />
+    <ClInclude Include="Headers\Items_Ring.h" />
+    <ClInclude Include="Headers\Items_Shoe.h" />
+    <ClInclude Include="Headers\Items_Spear.h" />
+    <ClInclude Include="Headers\Items_Stationery.h" />
+    <ClInclude Include="Headers\Items_Sword.h" />
+    <ClInclude Include="Headers\ManuTool.h" />
+    <ClInclude Include="Headers\RecipeModel.h" />
+    <ClInclude Include="Headers\SkillsPanel.h" />
+    <ClInclude Include="Recipes\RecipeModules.h" />
+    <ClInclude Include="Recipes\RecipeRegistrationHelpers.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CalcBOM.cpp" />
+    <ClCompile Include="CenterPanel.cpp" />
+    <ClCompile Include="CraftingPanel.cpp" />
+    <ClCompile Include="ManuTool.cpp" />
+    <ClCompile Include="RecipeModel.cpp" />
+    <ClCompile Include="Recipes\Armor.cpp" />
+    <ClCompile Include="Recipes\Axe.cpp" />
+    <ClCompile Include="Recipes\BaseMaterials.cpp" />
+    <ClCompile Include="Recipes\Belt.cpp" />
+    <ClCompile Include="Recipes\Bow.cpp" />
+    <ClCompile Include="Recipes\Cane.cpp" />
+    <ClCompile Include="Recipes\Cloak.cpp" />
+    <ClCompile Include="Recipes\Clothes.cpp" />
+    <ClCompile Include="Recipes\CompoundMaterials.cpp" />
+    <ClCompile Include="Recipes\Crystal.cpp" />
+    <ClCompile Include="Recipes\FishingTool.cpp" />
+    <ClCompile Include="Recipes\Food.cpp" />
+    <ClCompile Include="Recipes\Gun.cpp" />
+    <ClCompile Include="Recipes\Hat.cpp" />
+    <ClCompile Include="Recipes\Helmet.cpp" />
+    <ClCompile Include="Recipes\Ironware.cpp" />
+    <ClCompile Include="Recipes\Medicine.cpp" />
+    <ClCompile Include="Recipes\Necklace.cpp" />
+    <ClCompile Include="Recipes\Other.cpp" />
+    <ClCompile Include="Recipes\Pottery.cpp" />
+    <ClCompile Include="Recipes\Ring.cpp" />
+    <ClCompile Include="Recipes\Shoes.cpp" />
+    <ClCompile Include="Recipes\Spear.cpp" />
+    <ClCompile Include="Recipes\Stationery.cpp" />
+    <ClCompile Include="Recipes\Sword.cpp" />
+    <ClCompile Include="Recipes\Tools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ManuTool.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ManuTool.ico" />
+    <Image Include="res\EvilRaccoonHammer.ico" />
+    <Image Include="res\EvilRaccoonHammerSmall.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

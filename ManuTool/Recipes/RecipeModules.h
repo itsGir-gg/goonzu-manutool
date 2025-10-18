@@ -1,0 +1,32 @@
+#pragma once
+namespace recipes {
+	// Materials
+	void RegisterBaseMaterials();
+	void RegisterCompoundMaterials();
+	// Tools
+	void RegisterTools();
+	// Items
+	void RegisterSwordRecipes();
+	void RegisterSpearRecipes();
+	void RegisterAxeRecipes();
+	void RegisterCaneRecipes();
+	void RegisterBowRecipes();
+	void RegisterGunRecipes();
+	void RegisterMedicineRecipes();
+	void RegisterFoodRecipes();
+	void RegisterArmorRecipes();
+	void RegisterHelmetRecipes();
+	void RegisterBeltRecipes();
+	void RegisterShoeRecipes();
+	void RegisterCrystalRecipes();
+	void RegisterStationeryRecipes();
+	void RegisterIronwareRecipes();
+	void RegisterPotteryRecipes();
+	void RegisterFishingToolRecipes();
+	void RegisterAmmunitionRecipes();
+	void RegisterCloakRecipes();
+	void RegisterClothesRecipes();
+	void RegisterHatRecipes();
+	void RegisterRingRecipes();
+	void RegisterNecklaceRecipes();
+}

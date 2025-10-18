@@ -1,0 +1,3 @@
+﻿  ManuTool.cpp
+D:\Github\goonzu-manutool\ManuTool\ManuTool.cpp(498,1): warning C4715: 'WndProc': not all control paths return a value
+  ManuTool.vcxproj -> D:\Github\goonzu-manutool\ManuTool\x64\Debug\ManuTool.exe
