@@ -1,0 +1,24 @@
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.VC.db
+ipch/
+
+# Build outputs
+bin/
+obj/
+Debug/
+Release/
+
+# Visual C++ intermediate files and caches
+*.ipch
+*.pch
+*.idb
+
+# NuGet, Rider, OS
+packages/
+.idea/
+Thumbs.db
+.DS_Store
