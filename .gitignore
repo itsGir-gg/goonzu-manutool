@@ -5,6 +5,7 @@
 *.suo
 *.VC.db
 ipch/
+ManuTool/.vs/
 
 # Build outputs
 bin/
